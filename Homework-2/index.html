@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css"/> 
+    <script src="script.js" async></script>
+    <title>Калькулятор</title>
+</head>
+<body>
+    <h1> Примитивный калькулятор</h1>
+    <div id="main">
+        <div id="main_k1">
+            <div>
+                <input type="text" id="input_pole" placeholder="Введите значение" readonly>
+            </div>
+            <div id="klv"> 
+                <button name="1" onclick="Fclick(this.name)">1</button>
+                <button name="2" onclick="Fclick(this.name)">2</button>
+                <button name="3" onclick="Fclick(this.name)">3</button>
+                <button name="+" onclick="Fclick(this.name)">+</button>
+                <button name="4" onclick="Fclick(this.name)">4</button>
+                <button name="5" onclick="Fclick(this.name)">5</button>
+                <button name="6" onclick="Fclick(this.name)">6</button>
+                <button name="-" onclick="Fclick(this.name)">-</button>
+                <button name="7" onclick="Fclick(this.name)">7</button>
+                <button name="8" onclick="Fclick(this.name)">8</button>
+                <button name="9" onclick="Fclick(this.name)">9</button>
+                <button name="*" onclick="Fclick(this.name)">*</button>
+                <button name="AC" onclick="Fclick(this.name)">AC</button>
+                <button name="0" onclick="Fclick(this.name)">0</button>
+                <button name="=" onclick="Fclick(this.name)">=</button>
+                <button name="/" onclick="Fclick(this.name)">/</button>
+            </div>
+        </div>
+        <div id="main_k2">
+            <p style="text-align: center;">Блок с историей действий:</p>
+        </div>
+    </div>
+</body>
+</html>
+<!-- Требуется реализовать примитивный калькулятор с помощью HTML + JavaScript, используя мат. операторы изученные в ходе лекции.
+
+Калькулятор представляет собой блок, содержащий следующие элементы в виде кнопок (button):
+
+Набор цифр (от 0...9)
+Набор действий ( /, *, +, -, = )
+Форму для ручного ввода (input)
+Блок с историей действий (div, с помощью метода append, добавлять значения в данный блок)
+Примечание:
+
+При нажатии на кнопки цифр/действий,  в форму ввода должно записываться значения, которые мы выбрали
+При нажатии на действие "=", результат вычислений должен записываться в "Блок с историей действий"
+Добавление истории действий вынести в отдельную функцию
+Вычисление производить в одной функции, либо в зависимости от типа мат. действия, вызывать соответственную функцию. -->
